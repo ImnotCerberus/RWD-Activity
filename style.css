@@ -1,0 +1,57 @@
+body {
+    background-color: aqua;
+}
+
+@media only screen and (min-width: 1024px){
+    .lg-4{
+        width: calc(100%/12*4);
+        padding: 0 10px;
+        box-sizing: border-box;
+        background-color: navy;
+    }
+    .lg-8{
+        width: calc(100%/12*8);
+        padding: 0 10px;
+        box-sizing: border-box;
+        background-color: bisque;
+    }
+    .lg-12{
+        width: calc(100%/12*12);
+        padding: 0 10px;
+        box-sizing: border-box;
+        background-color: yellow;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        background-color: lightgreen;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .sm-12{
+        width: calc(100%/12*12)
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+.border{
+    border: solid 1px black;
+    text-align: center;
+}
+div{
+    margin: 5px;
+}
+aside{
+    max-height: 100px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+} 
+
